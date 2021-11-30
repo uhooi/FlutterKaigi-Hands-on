@@ -1,4 +1,4 @@
-//import '../../components/core/organisms/article_body.dart';
+import '../../components/core/organisms/article_body.dart';
 import '../../components/core/organisms/footer.dart';
 import '../../components/core/organisms/image_header.dart';
 //import '../../components/core/organisms/side_info_body.dart';
@@ -24,6 +24,42 @@ class _IndexTemplateState extends State<IndexTemplate> {
           mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
             ImageHeaderOrganisms(data: widget.data!['header']),
+            Container(
+                padding: const EdgeInsets.only(
+                  top: 30,
+                  bottom: 30,
+                  right: 50,
+                  left: 50,
+                ),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Container(
+                      color: Colors.black12,
+                      width: 1000,
+                      padding: const EdgeInsets.only(
+                        top: 50,
+                        bottom: 50,
+                        right: 50,
+                        left: 50,
+                      ),
+                      child: ArticleBodyOrganisms(
+                          data: widget.data!['body']['articles']),
+                    ),
+                    Container(
+                      width: 200,
+                      padding: const EdgeInsets.only(
+                        top: 0,
+                        bottom: 0,
+                        right: 0,
+                        left: 30,
+                      ),
+                      color: Colors.white,
+                      height: 1000,
+                    ),
+                  ],
+                )),
             Container(
               padding: const EdgeInsets.only(
                 top: 0,
