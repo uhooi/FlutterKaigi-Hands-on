@@ -1,7 +1,6 @@
 import '../../components/core/organisms/article_body.dart';
 import '../../components/core/organisms/footer.dart';
 import '../../components/core/organisms/image_header.dart';
-
 //import '../../components/core/organisms/side_info_body.dart';
 import 'package:flutter/material.dart';
 
